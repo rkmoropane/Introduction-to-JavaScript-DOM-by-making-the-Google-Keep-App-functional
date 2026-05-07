@@ -35,6 +35,9 @@
 
 - LocalStorage in Javascript: Storing data locally in the user's browser. Tutorials on [localStorage](https://www.w3schools.com/Jsref/prop_win_localstorage.asp)
 
+## Certificate:
+![Google Keep Completion Certificate](Google-Keep-Completion-Certificate.png)
+
 ## Questions and Answers:
 
 - **In web development, what does DOM stand for?**
