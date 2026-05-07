@@ -109,14 +109,19 @@ input:focus {
     top: 64px;
     display: flex;
     flex-direction: column;
-    margin-left: 18px;
+    /* margin-left: 18px; */
     margin-top: 5px;
     color: #5f6368;
     /* background-color: yellow; */
-    width: 60px;
+    width: 80px;
     overflow-x: hidden;
+    transition: 0.8s; /* put some animation effect when the sidebar is toggled */
+    height: 100%;
 }
-
+.sidebar-hover {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
+    background: white;
+}
 .active {
     background-color: #fef0c3;
     border-radius: 50%;
@@ -131,18 +136,41 @@ input:focus {
     padding: 3px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    white-space: nowrap; /* No text wrap when white-space is used */
 }
 
-.sidebar .sidebar-item .sidebar-text {
+.sidebar-item .sidebar-text {
     color: black;
     font-size: 0.9rem;
     margin-left: 20px;
     width: 250px;
 }
 
+.sidebar-item .material-symbols-outlined {
+    margin-left: 18px;
+}
+
 .sidebar-item:nth-child(1) {
     margin-top: 5px;
 }
+
+.sidebar-item:hover {
+    background-color: #f1f3f4;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.sidebar-active-item {
+    background-color: #fef0c3;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.sidebar-active-item:hover {
+    background-color: #fef0c3;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 
 /* MAIN FORM */
 .form-container {
@@ -193,18 +221,18 @@ input:focus {
     display: none;
 }
 
-.active-form form {
+.form {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 10px;
 }
 
-.active-form form .form-actions .icons {
+.form .form-actions .icons {
     display: flex;
 }
 
-.active-form form .form-actions {
+.form .form-actions {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -228,16 +256,23 @@ input:focus {
 .notes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
 }
 
 .note {
     background: white;
     margin: 10px;
-    width: 240px;
+    width: 270px;
     /* height: 104px; */
     border: 1px solid #e0e1e0;
     border-radius: 8px;
     position: relative;
+    cursor: pointer;
+}
+
+.note:hover {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149);
 }
 
 .note .title {
@@ -255,6 +290,8 @@ input:focus {
     justify-content: center;
     margin-top: 15px;
     padding: 0;
+    /* display: none; */
+    visibility: hidden;
 }
 
 .note-footer .material-symbols-outlined {
@@ -265,6 +302,7 @@ input:focus {
     position: absolute;
     left: -10px;
     top: -10px;
+    visibility: hidden;
 }
 
 .modal {

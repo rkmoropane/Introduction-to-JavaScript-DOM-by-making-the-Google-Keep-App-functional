@@ -21,10 +21,19 @@
  > Takes two paramenters = type of event and action you want to happen as soon you pass through this 
  > https://www.w3schools.com/jsref/met_element_addeventlistener.asp
 
-- Event > A specific occurrence that happens in the browser, like a button click
+- Event > A specific occurrence that happens in the browser, like a button click.
 
-- Focus() > it is an input provided function that sets the focus on a specified HTML element, such as an input field, making it active for user input
+- Focus() > it is an input provided function that sets the focus on a specified HTML element, such as an input field, making it active for user input.
 
+- event.preventDefault() > function of the event that cancels the default behavior of an event.
+
+- You can directly add events on the HTML element,
+ > ` <div class="note" id=${note.id} onclick="alert('hi')">`
+
+- Mouseover event > is an event that gets triggered when the mouse pointer enters an element.
+
+
+- LocalStorage in Javascript: Storing data locally in the user's browser. Tutorials on [localStorage](https://www.w3schools.com/Jsref/prop_win_localstorage.asp)
 
 ## Questions and Answers:
 
@@ -109,4 +118,113 @@
 - **What does the != selector represent in JavaScript?**
  > It represents the "not equal to" comparison operator in JavaScript
 
-- **
+- **In JavaScript, what does the join() function do when called on an array?**
+ > It concatenates the elements of an array into a string, using a specified separator
+
+- **What does the map() function do in JavaScript?**
+ > It creates a new array with the results of calling a provided function on every element in the calling array
+
+- **What does the innerHTML property do in JavaScript?**
+ > It sets or gets the HTML content within an HTML element
+
+- **In CSS, what is the purpose of using padding?**
+ > It adds space between the element's content and its border
+
+- **Which of the following statements is true regarding the flex-wrap property in CSS?**
+ > flex-wrap controls whether the flex container should wrap its items onto multiple lines
+
+- **Which CSS property is used to set padding for all sides of an element simultaneously?**
+ > padding
+
+- **In JavaScript, what does the preventDefault() function do?**
+ > It cancels the default behavior of an event
+
+- **Which event object method is used to prevent the default behavior of an event in JavaScript?**
+ > `preventDefault()`
+
+- **When should you use the preventDefault() function in JavaScript?**
+ > To prevent the default behavior of an event
+
+- **What is the difference between display: none and visibility: hidden in CSS?**
+ > display: none completely hides the element, removing it from the layout, while visibility: hidden hides the element but keeps its space in the layout
+
+- **Which of the following CSS properties completely removes an element from the layout and does not leave any empty space?**
+ > display: none
+
+- **In CSS, what is the purpose of the :hover pseudo-class?**
+ > It applies styles to an element when it is being hovered over
+
+- **In JavaScript, what does the mouseover event do?**
+ > It is triggered when the mouse pointer enters an element
+
+- **In JavaScript, what does the mouseout event do?**
+ > It is triggered when the mouse pointer leaves an element
+
+- **In JavaScript, how can you change the visibility of an element to "hidden" using the .style.visibility property?**
+ > `element.style.visibility = "hidden";`
+
+- **Which of the following represents a CSS descendant selector?**
+ > white space
+
+- **To style all `<p>` elements that are descendants of a `<div>` element, which CSS rule would you use?**
+ > `div p { ... }`
+
+- **In JavaScript, what does the closest() function do?**
+ > It returns the nearest parent element that matches a specified CSS selector
+
+- **Which of the following represents a correct usage of the closest() function in JavaScript?**
+ > `element.closest('.class-name')`
+
+- **In JavaScript, what does the classList.add() method do?**
+ > It adds a new class to an element
+
+- **In JavaScript, what does the classList.remove() method do?**
+ > It removes a class from an element
+
+- **In JavaScript, what does .children[1] refer to when used with an HTML element?**
+ > It refers to the second child element of the parent element
+
+- **What does the id attribute in HTML do?**
+ > It provides a unique identifier for an HTML element
+
+- **When passing an object as an argument to a function in programming, what is being passed?**
+ > The object's reference/address
+
+- **In object-oriented programming, what is the advantage of passing an object as an argument to a function?**
+ > It allows for better code organization and readability
+
+- **What happens if an object is modified within a function that takes the object as an argument?**
+ > The modifications affect the original object
+
+- **Which method is used to call the closest() function on a DOM element?**
+ > `.closest()`
+
+- **What type of selector can be passed to the closest() function?**
+ > CSS selector
+
+- **In JavaScript, what is the purpose of the `classList.add()` method?**
+ > Adds one or more classes to an element
+
+- **Which of the following is the correct syntax for using classList.add() to add a class "active" to an element with ID "myElement" in JavaScript?**
+ > `document.getElementById('myElement').classList.add('active');`
+
+- **Which method is used to remove a class from an HTML element in JavaScript?**
+ > `classList.remove()`
+
+- **In JavaScript, what is localStorage used for?**
+ > Storing data locally in the user's browser
+
+- **Which method is used to store data in localStorage in JavaScript?**
+ > `.setItem()`
+
+- **Which method is used to retrieve data from localStorage in JavaScript?**
+ > `.getItem()`
+
+- **What is the correct syntax to store a value "John" with the key "username" in localStorage using .setItem()?**
+ > `localStorage.setItem('username', 'John');`
+
+- **How do you retrieve a value from localStorage using JavaScript?**
+ > `.getItem()`
+
+- **What is the correct syntax to retrieve the value associated with the key "username" from localStorage using .getItem()?**
+ > `localStorage.getItem('username');`
